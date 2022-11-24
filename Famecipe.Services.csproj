@@ -5,6 +5,7 @@
     <RootNamespace>Famecipe.Services</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RepositoryUrl>https://github.com/Famecipe/services</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
