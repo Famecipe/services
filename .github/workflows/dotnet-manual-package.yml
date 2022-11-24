@@ -24,4 +24,4 @@ jobs:
     - name: Package
       run: dotnet pack --configuration Release -p:PackageVersion=${{ github.event.inputs.version }}
     - name: Push package
-      run: dotnet nuget push "bin/Release/Famecipe.Common.${{ github.event.inputs.version }}.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+      run: dotnet nuget push "bin/Release/Famecipe.Services.${{ github.event.inputs.version }}.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
