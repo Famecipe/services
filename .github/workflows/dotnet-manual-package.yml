@@ -18,7 +18,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 6.0.202
     - name: Add source
       run: dotnet nuget add source --username rjwehrle@gmail.com --password ${{ secrets.FAMECIPE_NUGET }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Famecipe/index.json"
     - name: Restore
