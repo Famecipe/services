@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 6.0.202
     - name: Add source
-      run: dotnet nuget add source "https://nuget.pkg.github.com/Famecipe/index.json" --store-password-in-clear-text --username rjwehrle --password ${{ secrets.FAMECIPE_NUGET }} --name github
+      run: dotnet nuget add source "https://nuget.pkg.github.com/Famecipe/index.json" --store-password-in-clear-text --username rjwehrle --password "$secrets.FAMECIPE_NUGET" --name github
     - name: Restore
       run: dotnet restore
     - name: Package
